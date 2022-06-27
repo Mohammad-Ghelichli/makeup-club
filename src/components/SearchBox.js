@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from "react";
-import {
-  Box,
-  Stack,
-  Typography,
-  TextField,
-  Button,
-} from "@mui/material";
+import React, { useEffect, useState, useContext, createContext } from "react";
+import { Box, Stack, Typography, TextField, Button } from "@mui/material";
 import { fetchData } from "../utils/FetchData";
+import cart from ".././assets/icons/cart.svg"
 const SearchBox = () => {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
   const searchHandler = async () => {
-    const searchData = await fetchData(
-      "http://makeup-api.herokuapp.com/api/v1/products.json"
-    );
-    const category = await searchData.filter((item) => item.category !== null);
-    const category2 = await category.filter((item) =>
-      item.category.includes(search)
-    );
-
-    await setResult(category2);
-    await console.log(result);
-    await setSearch("");
+    if (search) {
+      const searchData = await fetchData(
+        "http://makeup-api.herokuapp.com/api/v1/products.json"
+      );
+      const category = await searchData.filter(
+        (item) => item.category !== null
+      );
+      const category2 = await category.filter((item) =>
+        item.category.includes(search)
+      );
+      await setResult(category2);
+      await console.log(result);
+      await setSearch("");
+    }
   };
+
   return (
     <Stack justifyContent="center" alignItems="center">
       <Typography
@@ -61,14 +60,29 @@ const SearchBox = () => {
           Search
         </Button>
       </Box>
-      <Box>
+      <div style={{display:"flex" ,flexDirection:"row" ,flexWrap:"wrapReverse",
+    gap:"10px"
+}}>
         {result.map((item) => (
-          <Box key={item.id}>
-            {" "}
-            {item.name} <img width={100} src={item.image_link} alt="p" />{" "}
-          </Box>
+          <div class="product-card">
+          <div class="badge">Hot</div>
+          <div class="product-tumb">
+            <img src={item.image_link} alt=""/>
+          </div>
+          <div class="product-details">
+            <span class="product-catagory">{item.category}</span>
+            <h4>{item.name}</h4><br/>
+            <p> <h3>brand : {item.brand}</h3></p>
+            <div class="product-bottom-details">
+              <div class="product-price"><small>$ {item.price}</small>${item.price}</div>
+              <div class="product-links">
+                <i class="fa fa-shopping-cart"><img width="50px" src={cart} alt=""/></i>
+              </div>
+            </div>
+          </div>
+        </div>
         ))}
-      </Box>
+      </div>
     </Stack>
   );
 };

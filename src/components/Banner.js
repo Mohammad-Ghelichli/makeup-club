@@ -9,18 +9,19 @@ const Banner = () => {
       position="relative"
       p="20px"
     >
-      <Typography fontWeight="600" fontSize="26px" color="#B8010C">
+      <Typography fontWeight="600" fontSize="40px" color="#B8010C">
         Makeup club
       </Typography>
-      <Typography fontWeight="600" fontSize="22px" >
+      <Typography  fontWeight="500" fontSize="30px" opacity="0.1">
       Dose Your Makeup Make You Happy?
       </Typography>
-      <Typography fontWeight="600" fontSize="24px" mb={9}>
-        Thats Right
+      <br/>
+      <Typography fontWeight="500" fontSize="24px" mb={9}>
+        So ... !
       </Typography>
       <Button variant="contained" sx={{ bgcolor:"#B8010C",
             color:"#fff"}} >
-        Explore Exercise
+        Explore New Makeup
       </Button>
       <Typography fontWeight="600" fontSize="244px" color="#B8010C" mt="80px"
       sx={{opacity:0.2,

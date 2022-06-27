@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<g>
+	<polygon fill="none" stroke="#3C2415" stroke-miterlimit="10" points="75,27.395 91.831,58.169 122.605,75 91.831,91.831 
+		75,122.605 58.169,91.831 27.395,75 58.169,58.169 	"/>
+	<polygon fill="none" stroke="#3C2415" stroke-miterlimit="10" points="108.661,108.661 75,98.802 41.339,108.661 51.198,75 
+		41.339,41.339 75,51.198 108.661,41.339 98.802,75 	"/>
+	<line fill="none" stroke="#3C2415" stroke-miterlimit="10" x1="75" y1="51.198" x2="75" y2="98.802"/>
+	<line fill="none" stroke="#3C2415" stroke-miterlimit="10" x1="51.198" y1="75" x2="98.802" y2="75"/>
+	<line fill="none" stroke="#3C2415" stroke-miterlimit="10" x1="58.169" y1="58.169" x2="91.831" y2="91.831"/>
+	<line fill="none" stroke="#3C2415" stroke-miterlimit="10" x1="91.831" y1="58.169" x2="58.169" y2="91.831"/>
+
+	<animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="rotate"
+                    from="0 75 75"
+                    to="360 75 75"
+                    dur="2.5s"
+                    repeatCount="indefinite"/>
+</g>
+</svg>

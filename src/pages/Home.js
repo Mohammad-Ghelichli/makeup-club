@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material'
 ///components
 import Banner from '../components/Banner'
-import Exercise from '../components/Exercise'
+import Exercise from '../components/ProductGroup'
 import SearchBox from '../components/SearchBox'
 const Home = () => {
   return (
