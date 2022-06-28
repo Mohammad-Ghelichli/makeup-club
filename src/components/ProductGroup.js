@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ProductGroup = () => {
   return (
-    <div>
+    <div style={{padding:"10px 5px"}}>
       <br/>
       <br/>
       <br/>

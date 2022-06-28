@@ -178,6 +178,42 @@ a
 
 @media screen and (max-width:1200px) {
     .banner {
-       display: none;
+        position: absolute;
+       opacity: 0.3;
+       width: 200px;
+       height: 300px;
+        top: 350px;
+    }
+}
+@media screen and (max-width:400px) {
+    .product-price {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .product-price small {
+        font-size: 15px;
+        font-weight: 300;
+       
+    }
+    .ul{
+        
+        line-height: 2rem;
+        flex-wrap: wrap;
+        outline: none;
+        list-style: none;
+        font-size: 20px;
+        display: flex;
+     justify-content: space-evenly;
+        flex-direction: row;}
+    .cart_span{
+        position: absolute;
+        top: 20px;
+        left: 32px;
+    }
+    .product-card {
+        width: 270px;
+        margin: 20px auto;
+        background: #fafafa;
     }
 }

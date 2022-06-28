@@ -82,3 +82,26 @@ font-family: cursive;
 .but button:hover{
     transform: scale(1.2,1.2);
 }
+@media screen and (max-width: 600px){
+
+    .body{ padding: 0 0;
+    flex-direction: column;
+flex-wrap: wrap;}
+.container{
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;}
+    .picture img{
+        margin: 5px 5px;
+        margin-top: 20px;
+        width: 250px;
+        height: 150px;
+       
+    }
+    .but{
+        display: flex;
+        flex-direction: row-reverse;
+        position: static;
+        
+    }
+}

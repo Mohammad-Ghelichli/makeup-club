@@ -29,7 +29,8 @@ const SearchBox = () => {
     <Stack justifyContent="center" alignItems="center">
       <Typography
         fontWeight="700"
-        fontSize="40px"
+      sx={{ fontSize: { lg: "40px", xs: "19px" } }}
+        fontFamily="none"
         justifyContent="center"
         mb="40px"
       >

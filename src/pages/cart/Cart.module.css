@@ -20,12 +20,7 @@
 .itemcontainer{
     margin-top: 30px;
     margin-right: 240px;
-    /* position: absolute; */
-    /* z-index: 3; */
     width: 80%;
-    /* right: 231px;
-    top: 47px;
-     */
 }
 .checkout{
     margin: 20px;
@@ -109,17 +104,27 @@ margin-bottom: 20px;
 @media screen and (max-width: 600px) {
 
 .header span{
-    font-size: 18px;
+    font-size: 14px;
     margin: 0 25px;
 
 }
 .container{
+    border-radius: 4px;
+    padding: 10px 5px;
+    padding-right: 5px;
     flex-direction: column-reverse;
 }
 .checkout{
-    
+    width: 250px;
+    height: 300px;
     position: relative;
     margin: 5px auto;
+}
+.itemcontainer{
+    margin-right: 0px;
+    margin-top: 30px;
+    
+    width: 300px;
 }
 .checkout h1{
     font-size: 18px;
@@ -138,19 +143,15 @@ margin-bottom: 20px;
     flex-direction: row;
     margin: 20px 10px;
     position: absolute;
-    right: -10px;
+    right: 2px;
     top: -10px;
     z-index: 2;
 }
 
-.discount{
-    padding: 0 5px;
-    margin-top: 10px;
-    font-size: 15px;
 
 }
-.discount h3{
-    font-size: 15px;
-margin-bottom: 10px;
-}
+@media screen and (max-width:400px) {
+
+
+
 }

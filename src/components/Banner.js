@@ -5,7 +5,7 @@ import style from "../App.css";
 const Banner = () => {
   return (
     <Box
-      sx={{ mt: { lg: "212px", xs: "70px" }, ml: { sm: "50px" } }}
+      sx={{ mt: { lg: "212px", xs: "10px" }, ml: { sm: "50px" } }}
       position="relative"
       p="20px"
     >

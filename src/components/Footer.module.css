@@ -50,3 +50,26 @@
     top: 29%;
     left: 0%;
 }
+@media screen and (max-width:400px) {
+    .row img {
+        width: 200px;
+        top: 75%;
+    left: 20%;
+    }
+
+    .subcontainer{
+        text-align: center;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .container h4{
+        display: none;
+    }
+    .row2 h2{
+        display: none;
+
+    }
+}
