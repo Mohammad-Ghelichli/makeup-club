@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { Stack, Typography } from "@mui/material";
 import cart from "../assets/icons/cart.svg";
 import account from "../assets/icons/account.svg";
+import { cartContext } from "../pages/cart/context/CartContextProvider";
 
 //icons
 import Logo from "../assets/images/Logo.svg";
 
 const Navbar = () => {
+  const {state,dispatch}=useContext(cartContext)
   return (
     <Stack
       direction="row"
@@ -20,9 +22,9 @@ const Navbar = () => {
     >
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="center">
        
-          <img width={60} src={cart} alt="cart" />
+          <Link to="/cart"><img width={60} src={cart} alt="cart" /><span style={{color:"#B8010C",fontSize:"24px",fontWeight:"800"}}>{state.itemCounter}</span></Link>
        
-          <img width={60} src={account} alt="account" />
+          <Link to="/login"><img width={60} src={account} alt="account" /></Link>
       </Stack>
       <Link to="/">
 

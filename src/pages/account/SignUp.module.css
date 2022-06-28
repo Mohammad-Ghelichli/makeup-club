@@ -1,0 +1,121 @@
+*{
+    padding: 0 0;
+    margin: 0 0;
+}
+.main{
+    padding: 50px;
+    min-height: 100vh;
+    background-image: url(../../assets/images/login.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    
+    
+}
+.container input{
+    padding: 20px 0;
+    opacity: 0.7;
+    font-size: 22px;
+}
+.container{
+        
+    border: 1px solid silver;
+    min-height: 400px;
+    text-align: center;
+    margin: 120px auto;
+    /* min-height: 100vh; */
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding-top: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+.header{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: rgba(24, 59, 212, 0.815);
+    font-size: 29px;
+    font-family:Tahoma;
+    margin-right: 50%;
+}
+.formContainer{
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    
+}
+.formContainer label{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
+.formContainer input{
+    border-radius: 4px;
+    border:  1px solid silver;
+    height: 25px;
+    padding-left: 15px;
+}
+.formInput:focus{
+    outline: none;
+    box-shadow: 0 0 3px 2px rgb(81, 81, 240);
+
+}
+.uncomplet{
+    outline: none;
+    box-shadow: 0 0 3px 2px rgb(250, 2, 2);
+}
+.uncomplet:focus{
+    outline: none;
+    box-shadow: 0 0 3px 2px rgb(250, 2, 2);
+}
+.formContainer span{
+    color: rgb(250, 2, 2);
+    text-align: left;
+}
+.checkedBox{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+.checkedBox label{
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(44, 54, 204);
+}
+.checkedBox input{
+ /* appearance: none; */
+  width: 20px;
+  border-radius: 10px;
+height: 20px;
+}
+.formButton{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+.formButton button{
+    width: 70px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+.formButton a{
+        text-decoration: none;
+        font-size: 18px;
+}
+.formButton button:hover{
+    cursor: pointer;
+    box-shadow:  0 0 4px 2px rgb(44, 54, 204);
+}
+   

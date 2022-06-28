@@ -1,7 +1,10 @@
 import React, { useEffect, useState, useContext, createContext } from "react";
 import { Box, Stack, Typography, TextField, Button } from "@mui/material";
 import { fetchData } from "../utils/FetchData";
-import cart from ".././assets/icons/cart.svg"
+import Product from "../pages/cart/shared/Product";
+import loading from "../assets/icons/loading.svg"
+
+
 const SearchBox = () => {
   const [search, setSearch] = useState("");
   const [result, setResult] = useState([]);
@@ -60,28 +63,20 @@ const SearchBox = () => {
           Search
         </Button>
       </Box>
-      <div style={{display:"flex" ,flexDirection:"row" ,flexWrap:"wrapReverse",
+      <div style={{display:"flex" ,flexDirection:"rowReverse" ,flexWrap:"wrap",
     gap:"10px"
 }}>
-        {result.map((item) => (
-          <div class="product-card">
-          <div class="badge">Hot</div>
-          <div class="product-tumb">
-            <img src={item.image_link} alt=""/>
-          </div>
-          <div class="product-details">
-            <span class="product-catagory">{item.category}</span>
-            <h4>{item.name}</h4><br/>
-            <p> <h3>brand : {item.brand}</h3></p>
-            <div class="product-bottom-details">
-              <div class="product-price"><small>$ {item.price}</small>${item.price}</div>
-              <div class="product-links">
-                <i class="fa fa-shopping-cart"><img width="50px" src={cart} alt=""/></i>
-              </div>
-            </div>
-          </div>
+         {result ? (
+        result.map(item => <Product key={item.id} item={item}/>
+          
+        )
+      ) : (
+        <div>
+
+          <img width="400px" src={loading} alt="loading"/>
+
         </div>
-        ))}
+      )}
       </div>
     </Stack>
   );
