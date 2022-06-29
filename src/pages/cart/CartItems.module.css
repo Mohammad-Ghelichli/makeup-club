@@ -7,7 +7,7 @@
     flex-direction: row;
     justify-content: space-around;
     place-items: center;
-    width: 100%;
+    width: 80%;
     height: 180px;
     box-shadow: 20px 20px 50px rgb(0 0 0 / 50%);
     border-radius: 15px;

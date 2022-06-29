@@ -34,8 +34,8 @@ const Navbar = () => {
         <img
           src={Logo}
           style={{
-            width: "80%",
-            height: "60%",
+            width: "180px",
+            height: "110px",
             margin: "0 20px",
             color: "#FF2625",
           }}

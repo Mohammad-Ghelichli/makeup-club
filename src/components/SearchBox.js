@@ -42,7 +42,7 @@ const SearchBox = () => {
             input: { border: "none" },
             width: { lg: "800px", xs: "350px" },
           }}
-          placeholder="Search Exercise"
+          placeholder="Search Product Type"
           value={search}
           onChange={(e) => setSearch(e.target.value.toLowerCase())}
           type="text"
